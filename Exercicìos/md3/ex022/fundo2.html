@@ -5,54 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fundo2</title>
     <style>
-         body {
-            background-color: rgb(255, 255, 255);
-            font: 13pt Arial;
-            color: black;
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
         }
 
-        div { 
-            width: 90%;
-            height: 400px;
-            background-color: lightgray;
-            border: 1px solid black;
+        h1{
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+            font-size: 3em;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.226);
         }
 
-        div#area001 {
-            background-image: url(image/pattern001.png);
+        ol li{
+            font-size: 1.5em;
+        }
+
+        div{
+            width: 1000px;
+            height: 500px;
+            border: 2.5px solid black;
+            border-radius: 5px;
+        }
+
+        div#q1{
+            background-image: url(https://gustavoguanabara.github.io/html-css/imagens/mascote.png);
+            background-size: 250px 250px;
+            background-repeat: no-repeat;
+        }
+
+        div#q2{
+            background-image: url(https://gustavoguanabara.github.io/html-css/imagens/mascote.png);
+            background-size: 250px 250px;
             background-repeat: repeat;
         }
 
-        div#area002 {
-            background-image: url(image/pattern002.png);
+        div#q3{
+            background-image: url(https://gustavoguanabara.github.io/html-css/imagens/mascote.png);
+            background-size: 250px 250px;
             background-repeat: repeat-x;
         }
 
-        div#area003 {
-            background-image: url(image/pattern003.png);
+        div#q4{
+            background-image: url(https://gustavoguanabara.github.io/html-css/imagens/mascote.png);
+            background-size: 250px 250px;
             background-repeat: repeat-y;
-        }
-
-        div#area004 {
-            background-image: url(image/pattern004.png);
-            background-repeat: no-repeat;
         }
     </style>
 </head>
 <body>
     <h1>Repetições em background-image</h1>
 
-    <h2>background-repeat: repeat;</h2>
-    <p>Repete a imagem tanto no sentido vertical, quanto horizontal (padrão).</p>
-    <div id="area001"></div>
-    <h2>background-repeat: repeat-x;</h2>
-    <p>Repete apenas no eixo horizontal.</p>
-    <div id="area002"></div>
-    <h2>background-repeat: repeat-y;</h2>
-    <p>Repete apenas no eixo vertical.</p>
-    <div id="area003"></div>
-    <h2>background-repeat: no-repeat;</h2>
-    <p>Não repete em nenhum eixo. A imagem só é carregada uma única vez.</p>
-    <div id="area004"></div>
+    <ol start="1">
+        <li>
+            <p>Sem Repetições</p>
+            <div id="q1">
+            </div>
+        </li>
+        <li>
+            <p>Com Repetições</p>
+            <div id="q2">
+            </div>
+        </li>
+        <li>
+            <p>Com Repetições no eixo x</p>
+            <div id="q3">
+            </div>
+        </li>
+        <li>
+            <p>Com Repetições no eixo y</p>
+            <div id="q4">
+            </div>
+        </li>
+    </ol>
 </body>
 </html>
