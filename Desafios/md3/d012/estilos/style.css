@@ -52,6 +52,28 @@ section {
     font: normal normal 2.8vw var(--font-poema);
 }
 
+section > p{
+    padding-bottom: 2em;
+}
+
+.normal {
+    background-color: white;
+}
+
+.image{
+    background: dimgray url(../imagens/background002.jpg) no-repeat right center fixed;
+    background-size: cover;
+    color: white;
+    box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0.322);
+}
+
+.image > p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.329);
+    padding: 8px;
+    text-shadow: 1px 1px 1px black;
+}
+
 footer {
     background-color: black;
     color: white;
@@ -60,20 +82,4 @@ footer {
 
 footer p {
     padding: 10px;
-}
-
-.normal {
-    background-color: white;
-}
-
-.image{
-    background-color: dimgray;
-    color: white;
-}
-
-.image > p {
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.103);
-    padding: 8px;
-    width: 500px;
 }
